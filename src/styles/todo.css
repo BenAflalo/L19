@@ -1,0 +1,30 @@
+.todo {
+  background-color: var(--color-todo-bg);
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: background-color 0.1s;
+}
+
+.todo .text .complete {
+  text-decoration: line-through;
+  color: var(--color-dark-gray);
+}
+
+.todo .text:hover {
+  color: darkmagenta;
+  cursor: pointer;
+}
+
+.edit div {
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.edit div:hover {
+  color: #34495e;
+}
