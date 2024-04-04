@@ -10,11 +10,9 @@ const ProfilePage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    dispatch(setLoggedInUser());
     if (!loggedInUser) {
-      dispatch(setLoggedInUser());
-      if (!loggedInUser) {
-        navigate("/login");
-      }
+      navigate("/login");
     }
   }, [navigate]);
 

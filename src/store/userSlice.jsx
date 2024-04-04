@@ -20,7 +20,7 @@ const loginSlice = createSlice({
         // navigate("/signup");
       }
       if (user) state.loggedInUser = user;
-      console.log(state.loggedInUser);
+      // console.log(state.loggedInUser);
     },
     logout(state, action) {
       state.loggedInUser = null;
